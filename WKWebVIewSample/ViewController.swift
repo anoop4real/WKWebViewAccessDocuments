@@ -80,7 +80,7 @@ class ViewController: UIViewController{
         
         let imagePath = NSSearchPathForDirectoriesInDomains(.cachesDirectory, .userDomainMask, true).first!
         let originURLForFile = URL(fileURLWithPath: imagePath.appendingFormat("/smiley.png"))
-        
+        print("OfflinePath \(originURLForFile.absoluteString)")
         return originURLForFile.absoluteString
     }
 
